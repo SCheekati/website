@@ -52,7 +52,7 @@ body { font-family: "Georgia"; background-color: #ffd; }
 
 h1.title { text-align: center; }
 /* text-transform: uppercase; */
-h1.title a:link, h1.title a:visited, h1.fronttitle a:link, h1.fronttitle a:visited { background-color: #ffa; padding: .3em; padding-top: 3em; text-decoration: none; color: #C3C36E; font-weight: bold; letter-spacing: .1em; font-family: "Avenir"; border-bottom: none; }
+h1.title a:link, h1.title a:visited, h1.fronttitle a:link, h1.fronttitle a:visited { background-color: #ffa; padding: .3em; padding-top: 3em; text-decoration: none; color: #C3C36E; font-weight: bold; letter-spacing: .1em; font-family: "Organizcal"; border-bottom: none; }
 #banner { margin-left: 8em; }
 .content { max-width: 30em; margin-top: 8em; margin-left: 8em; }
 hr { border: 0px; }
