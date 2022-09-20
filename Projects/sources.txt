@@ -1,0 +1,13 @@
+CREDITS AND SOURCES 
+
+RESOURCES USED TO BUILD THE range_sensor.py :  
+
+https://thepihut.com/blogs/raspberry-pi-tutorials/hc-sr04-ultrasonic-range-sensor-on-the-raspberry-pi 
+
+https://docs.python.org/3.5/library/email-examples.html 
+
+https://stackoverflow.com/questions/38825943/mimemultipart-mimetext-mimebase-and-payloads-for-sending-email-with-file-atta 
+
+ 
+
+For editing video: iMovie 
