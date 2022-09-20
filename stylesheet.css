@@ -1,165 +1,86 @@
-<style>
-	* {
-		margin: 0;
-		padding: 0;
-	}
+@font-face{
+    font-family:"Avenir";
+    src:url("Fonts/1475508/065a6b14-b2cc-446e-9428-271c570df0d9.woff2") format("woff2"),url("Fonts/1475508/65d75eb0-2601-4da5-a9a4-9ee67a470a59.woff") format("woff");
+}
 
-	.navbar {
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		position: sticky;
-		top: 0;
-		cursor: pointer;
-	}
+/* with respect to Aaron */
 
-	.background {
-		background: black;
-		background-blend-mode: darken;
-		background-size: cover;
-	}
+/* rhythm magic */
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,p,blockquote,th,td {  
+        margin:0; padding:0; 
+	text-rendering: optimizeLegibility;
+}
+body { font-size: 87.5%; 
+/*  background: url("http://24ways.org/examples/compose-to-a-vertical-rhythm/underline.gif");*/
+}
+html>body { font-size: 12px; }
+p, ol,ul,  pre { font-size: 1em; margin-bottom: 1.5em; line-height: 1.5em; }
+sup { vertical-align: super; line-height: .1em }
+pre { padding-left: 1em; }
 
-	.nav-list {
-		width: 70%;
-		display: flex;
-		align-items: center;
-	}
+h1.fronttitle {
+        font-size:3em;
+        line-height: 2em;
+        margin-bottom: 0em; 
+        text-align: left;
+}
 
-	.logo {
-		display: flex;
-		justify-content: center;
-		align-items: center;
-	}
+h1.title {
+        font-size:1.5em;
+        line-height: 1em;
+        margin-top: .5em;
+        margin-bottom: .5em; 
+}
 
-	.logo img {
-		width: 180px;
-		border-radius: 50px;
-	}
+h1 {
+        line-height:1em;
+        font-size:1.5em;
+        font-weight:normal;
+        margin:0 0 1em 0;
+}
+h2 {
+        font-size:1.1667em;
+        line-height: 1.286em;
+        margin:1.929em 0 0.643em 0;
+        font-weight:normal;
+}
 
-	.nav-list li {
-		list-style: none;
-		padding: 26px 30px;
-	}
+body { font-family: "Georgia"; background-color: #ffd; }
 
-	.nav-list li a {
-		text-decoration: none;
-		color: white;
-	}
+:link { color: #68693F; text-decoration: none; border-bottom: 1px dotted #ccc; }
+:visited { color: #68693F; text-decoration: none; }
 
-	.nav-list li a:hover {
-		color: grey;
-	}
+h1.title { text-align: center; }
+/* text-transform: uppercase; */
+h1.title a:link, h1.title a:visited, h1.fronttitle a:link, h1.fronttitle a:visited { background-color: #ffa; padding: .3em; padding-top: 3em; text-decoration: none; color: #C3C36E; font-weight: bold; letter-spacing: .1em; font-family: "Avenir"; border-bottom: none; }
+#banner { margin-left: 8em; }
+.content { max-width: 30em; margin-top: 8em; margin-left: 8em; }
+hr { border: 0px; }
+hr:after { content: ""; }
+hr + p:first-letter { font-size: 3em; line-height: 1em; margin-right: 2px; display: block; float: left }
 
-	.rightnav {
-		width: 30%;
-		text-align: right;
-	}
+.comment { color: #666; }
+.posted { text-align: right; color: #666; font-style: italic; }
+.posted :link, .posted :visited { text-decoration: none; color: #666; border-bottom: 1px dotted; }
+td { vertical-align: top; }
+h2.posttitle :link, h2.posttitle :visited { text-decoration: none; color: black; }
 
-	#search {
-		padding: 5px;
-		font-size: 17px;
-		border: 2px solid grey;
-		border-radius: 9px;
-	}
+.byline { text-align: right; color: #888; margin-right: 1em; }
+.byline :link, .byline :visited { color: #666; text-decoration: none; background: #ffc; }
+/* table.main { width: 100%; } */
+td.content { padding-left: 4em; max-width: 30em }
+.sidebar { padding-left: 4em; text-align: right; color: #777; padding-right: .5em; max-width: 20em; float: right; }
+.sidebar :link, .sidebar :visited { color: #8B8A64; text-decoration: none; border-bottom: 1px dotted; }
 
-	.firstsection {
-		background-color: green;
-		height: 400px;
-	}
+#comments_show :link, #comments_show :visited, .box :link, .box :visited { color: #555; text-decoration: none; background-color: #D2D6BC; padding: .5em; margin: -.5em; border-bottom: none; }
+blockquote { margin-left: 2em; }
 
-	.secondsection {
-		background-color: blue;
-		height: 400px;
-	}
+ul, ol { margin-left: 3em; }
+.footnotes ol { margin-left: 1.5em; }
+.footnotes hr { border-top: 1px solid #D2D6BC;  width: 8em; height: 0px; margin-left: 0; margin-top: 0; margin-bottom: 1.5em; padding-top: -1px; padding-bottom: 0px; }
+div.footnotes { color: #666; padding-top: 0; }
 
-	.box-main {
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		color: black;
-		max-width: 80%;
-		margin: auto;
-		height: 80%;
-	}
+.epigraph { padding-left: 10%; color: #666; }
+.attribution { text-align: right; font-style: italic; }
 
-	.firsthalf {
-		width: 100%;
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-	}
-
-	.secondhalf {
-		width: 30%;
-	}
-
-	.secondhalf img {
-		width: 70%;
-		border: 4px solid white;
-		border-radius: 150px;
-		display: block;
-		margin: auto;
-	}
-
-	.text-big {
-		font-family: 'Piazzolla', serif;
-		font-weight: bold;
-		font-size: 35px;
-	}
-
-	.text-small {
-		font-size: 18px;
-	}
-
-	.btn {
-		padding: 8px 20px;
-		margin: 7px 0;
-		border: 2px solid white;
-		border-radius: 8px;
-		background: none;
-		color: white;
-		cursor: pointer;
-	}
-
-	.btn-sm {
-		padding: 6px 10px;
-		vertical-align: middle;
-	}
-
-	.section {
-		height: 400px;
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		max-width: 90%;
-		margin: auto;
-	}
-
-	.section-Left {
-		flex-direction: row-reverse;
-	}
-
-	.paras {
-		padding: 0px 65px;
-	}
-
-	.thumbnail img {
-		width: 250px;
-		border: 2px solid black;
-		border-radius: 26px;
-		margin-top: 19px;
-	}
-
-	.center {
-		text-align: center;
-	}
-
-	.text-footer {
-		text-align: center;
-		padding: 30px 0;
-		font-family: 'Ubuntu', sans-serif;
-		display: flex;
-		justify-content: center;
-		color: white;
-	}
-</style>
+.footertag { float: right; padding-right: 2em; }
