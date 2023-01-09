@@ -19,6 +19,7 @@
         font-size: 35px;
         color: white;
         text-decoration: none;
+        text-align: center;
       }
       
       nav ul {
@@ -52,6 +53,7 @@
         font-size: 50px;
         color: black;
         text-decoration: none;
+        text-align: center;
       }
       
       section h2 {
@@ -71,15 +73,28 @@
       }
 
       .container {
-        border: 59px solid rgb(194, 54, 54);
+        border: 20px solid rgb(107, 107, 107);
         padding: 20px;
       }
+
 
       .project {
         border: 5px solid #333;
         padding: 10px 20px;
-        margin-top: 20px;
-        margin-bottom: 20px;
         border-radius: 10px;
+        margin: 0 auto;
+      }
+
+      .project-container {
+        border: 15px solid rgb(44, 8, 53);
+        padding: 10px 20px;
+        border-radius: 10px;
+
       }
       
+
+      @media (max-width: 600px) {
+        .project {
+          width: 100%;
+        }
+      }
