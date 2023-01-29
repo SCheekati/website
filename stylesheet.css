@@ -20,8 +20,16 @@
         color: white;
         text-decoration: none;
         text-align: center;
+        width: 100%
       }
-      
+      nav {
+        display: flex;
+        list-style: none;
+        margin: 20px 0;
+        padding: 0;
+        width: 100%;
+        justify-content: center;
+      }
       nav ul {
         display: flex;
         list-style: none;
@@ -30,12 +38,13 @@
       }
       
       nav li {
-        margin: 0 10px;
+        margin: 0 20px;
       }
       
       nav a {
         color: white;
         text-decoration: none;
+        font-size: larger;
       }
       
       main {
