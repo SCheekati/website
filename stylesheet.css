@@ -6,7 +6,7 @@
       }
       
       header {
-        background-color: #333;
+        background-color: #6e78ff;
         color: white;
         display: flex;
         justify-content: space-between;
@@ -17,7 +17,7 @@
       header h1 {
         margin: 0;
         font-size: 35px;
-        color: white;
+        color: rgb(255, 255, 255);
         text-decoration: none;
         text-align: center;
         width: 100%
@@ -82,8 +82,9 @@
       }
 
       .container {
-        border: 35px solid rgb(107, 107, 107);
+        border: 35px solid #c1d3fe;
         padding: 20px;
+        background-color: rgb(33, 41, 54);
       }
 
 
@@ -92,14 +93,16 @@
         padding: 10px 20px;
         border-radius: 10px;
         margin: 0 auto;
+        background-color: white;
       }
 
       .project-container {
-        border: 5px solid rgb(44, 8, 53);
+        border: 5px solid #809bce;
         padding: 10px 20px;
         border-radius: 10px;
         width: 100%;
         /* height: 100%; */
+        background-color: white;
       }
       
 
