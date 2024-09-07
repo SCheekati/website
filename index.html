@@ -1,134 +1,136 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <link rel="stylesheet" href="stylesheet.css" />
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shravan Cheekati</title>
-  </head>
-  <body style = "background-size: 0;">
-
-    <header>
-        <nav>
-            <ul>
-                <li><a href="https://www.linkedin.com/in/shravan-cheekati">LinkedIn</a></li>
-                <li><a href="/ShravanCheekatiResume.pdf">Resume</a></li>
-                <li><a href="https://github.com/SCheekati">Github</a></li>
-            </ul>
-          </nav>
-      <h1>Shravan Cheekati</h1>
-      <!-- <h1><a href="">Shravan Cheekati</a></h1> -->
-      <nav>
-        <ul>
-            <li><a href="#about">About</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#misc">Technical</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
-    </header>
-
-    <div class="container">
-    <main>
-        
-      <section id="about">
-        <div class="project-container">
-        <h1>About</h1>
-        <p>
-          Hello. My name is Shravan Cheekati and I study Computer Science at Georgia Institute of Technology.<br />
-          I am expected to graduate in December 2023 and my concentrations include <a href="https://www.cc.gatech.edu/academics/threads/intelligence">Intelligence</a> and <a href="https://www.cc.gatech.edu/academics/threads/information-internetworks">Info Internetworks</a>.<br />
-          I teach Data Structures & Algorithms (CS 1332) as a Teaching Assistant under <a href="https://www.cc.gatech.edu/people/mary-hudachek-buswell">Dr. Mary Hudachek-Buswell</a>.<br />
-          Some of my technical interests include ML, Web3, and Cloud Computing.
-        </p>
-
-        <p>I have made this website to keep a record of everything relating to me for my reference and in case someone wanted to stalk me. </br>
-          You may think I am a minimalist from one look at the page. Yes, I am. It is definitely a better word than lazy. </br>
-          I have a sense of duty to keep this world safe from my terrible design.</br>
-          Anyway, whatever you call me: lazy, minimalist, or a hero, I am just here to display myself through some HTML.
-        </p>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+            overflow: hidden;
+        }
+        .content {
+            text-align: center;
+            z-index: 10;
+        }
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 0.5em;
+        }
+        p {
+            font-size: 1.2em;
+            color: #666;
+        }
+        .floating-object {
+            position: absolute;
+            box-shadow: 0 0 20px rgba(0,0,0,0.3);
+        }
+        .object-1 {
+            width: 120px;
+            height: 120px;
+            background: linear-gradient(45deg, #000000, #333333);
+            border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+            animation: float1 10s ease-in-out infinite, pulse 4s ease-in-out infinite, rotate 15s linear infinite;
+        }
+        .object-2 {
+            width: 100px;
+            height: 100px;
+            background: linear-gradient(45deg, #1a1a1a, #4d4d4d);
+            border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+            animation: float2 12s ease-in-out infinite, pulse 5s ease-in-out infinite, rotate 18s linear reverse infinite;
+        }
+        .object-3 {
+            width: 80px;
+            height: 80px;
+            background: linear-gradient(45deg, #2c2c2c, #666666);
+            border-radius: 50% 50% 30% 70% / 50% 50% 70% 60%;
+            animation: float3 9s ease-in-out infinite, pulse 3s ease-in-out infinite, rotate 12s linear infinite;
+        }
+        @keyframes float1 {
+            0%, 100% { transform: translate(0, 0); }
+            25% { transform: translate(20px, -20px); }
+            50% { transform: translate(0, -40px); }
+            75% { transform: translate(-20px, -20px); }
+        }
+        @keyframes float2 {
+            0%, 100% { transform: translate(0, 0); }
+            33% { transform: translate(-25px, -15px); }
+            66% { transform: translate(25px, -30px); }
+        }
+        @keyframes float3 {
+            0%, 100% { transform: translate(0, 0); }
+            50% { transform: translate(15px, -25px); }
+        }
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.1); }
+        }
+        @keyframes rotate {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+    </style>
+</head>
+<body>
+    <div class="floating-object object-1"></div>
+    <div class="floating-object object-2"></div>
+    <div class="floating-object object-3"></div>
+    <div class="content">
+        <h1>Shravan Cheekati</h1>
+        <p>╔═══╗ <br>
+          ║╔═╗║ <br>
+          ║║ ║║ <br>
+          ║╚═╝║ <br>
+          ║╔═╗║ <br>
+          ╚╝ ╚╝ <br> 
+             ┏━┓
+             ┃┏┛
+             ┗┛
+          ◯┈◯
+            ◡‿◡
+            ╰━╯<br>
+          ▀█▀ █▄█ ██▄<br>
+           █  █ █ █▄█<br>
+          </p>
     </div>
-      </section>
 
-      
-      <section id="projects">
-        <div class="project-container">
-        <h1>Projects</h1>
-        <h2><p align="center">Click on the titles to explore further</p></h2>
-        <div class="project">
-            <h2><a href = PacTelligent.html>PacTelligent</a></h2>
-                <ul>
-                <li>PacTelligent</li>
-                <li>Project 2</li>
-                <li>Technology: Python</li>
-                </ul>
-        </div>
-        <div class="project">
-          <h2>Filler</h2>
-                <ul>
-                <li>Auto-Pacman</li>
-                <li>Project 2</li>
-                <li>Technology: Python</li>
-                </ul>
-        </div>
-        <div class="project">
-          <h2>Filler</h2>
-                <ul>
-                <li>Auto-Pacman</li>
-                <li>Project 2</li>
-                <li>Technology: Python</li>
-                </ul>
-        </div>
-        <div class="project">
-          <h2>Filler</h2>
-                <ul>
-                <li>Auto-Pacman</li>
-                <li>Project 2</li>
-                <li>Technology: Python</li>
-                </ul>
-        </div>
-              </div>
-      </section>
+    <script>
+        const floatingObjects = document.querySelectorAll('.floating-object');
+        
+        function smoothMove(object) {
+            const maxX = window.innerWidth - object.offsetWidth;
+            const maxY = window.innerHeight - object.offsetHeight;
+            const targetX = Math.random() * maxX;
+            const targetY = Math.random() * maxY;
+            
+            object.animate([
+                { left: object.offsetLeft + 'px', top: object.offsetTop + 'px' },
+                { left: targetX + 'px', top: targetY + 'px' }
+            ], {
+                duration: 10000 + Math.random() * 5000,
+                easing: 'ease-in-out',
+                fill: 'forwards'
+            });
+        }
 
+        function initializePositions() {
+            floatingObjects.forEach(object => {
+                object.style.left = Math.random() * (window.innerWidth - object.offsetWidth) + 'px';
+                object.style.top = Math.random() * (window.innerHeight - object.offsetHeight) + 'px';
+            });
+        }
 
-    
-      <section id="misc">
-        <div class="project-container">
-        <h1>Technical</h1>
-        <h2>Coursework:</h2>
-        <ul>
-          <li>Computer Networking - in depth study of all network layers</li>
-          <li><a href="https://mahdi-roozbahani.github.io/CS46417641-fall2022/">Machine Learning</a> - application of various ML techniques and data driven decision making</li>
-          <li><a href="https://gtinfosec.org/index.html">Information Security</a> - fundamental approaches for security covering various OS, server, and web (SQL, XSS, CSRF) vulnerabilities and hashing algorithms.</li>
-          <li><a href="https://dellaert.github.io/20S-3630/">Robotics & Perception</a> - control navigation and localization of the robot in an environment.</li>
-         </ul>
-        <h2>Languages:</h2>
-        <ul>
-          <li>Computer Networking - in depth study of all network layers</li>
-          <li><a href="https://mahdi-roozbahani.github.io/CS46417641-fall2022/">Machine Learning</a> - application of various ML techniques and data driven decision making</li>
-          <li>AChievements</li>
-        </ul>
-      </div>
-      </section>
-
-      <section id="contact">
-        <div class="project-container">
-        <h1>Contact</h1>
-        <p align="center">
-          Email: <a href="mailto:shravancheekati1@gmail.com">shravancheekati1 at gmail dot com</a>
-          <br />
-          Github: <a href="https://github.com/SCheekati">username</a>
-          <br />
-          LinkedIn: <a href="https://www.linkedin.com/in/shravan-cheekati">username</a>
-          <br />
-        </p>
-      </div>
-      </section>
-
-
-    </main>
-</div>
-    <footer>
-      <p>Copyright &copy; 2021 Shravan Cheekati
-      </p>
-      <p align="right">Last updated on xx</p>
-    </footer>
-  </body>
+        initializePositions();
+        floatingObjects.forEach(object => {
+            smoothMove(object);
+            setInterval(() => smoothMove(object), 10000 + Math.random() * 5000);
+        });
+    </script>
+</body>
 </html>
